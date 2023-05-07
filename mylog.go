@@ -19,6 +19,10 @@ const iDEBUG_MODE debug_mode = MODE_DEFAULT
 const isINFO_MODE = true
 const FORMAT_TIME string = "2006-01-02 15:04:05.0000"
 
+func GetVersion() string {
+	return version
+}
+
 // Write log to console
 func WriteInfo(a ...any) {
 	fmt.Println(time.Now().Format(FORMAT_TIME), a)
